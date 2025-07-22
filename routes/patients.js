@@ -41,7 +41,7 @@ router.post('/app/addpatient', (req, res) => {
         PD = [];
     }
 
-    // Check for empty fields
+    
     if (_.isEmpty(req.body.firstName) || _.isEmpty(req.body.lastName) || _.isEmpty(req.body.hospitalNumber) || !isValidDate(dateOfBirth)) {
         if (_.isEmpty(req.body.firstName)) req.flash('error_msg', 'Please enter the first name.');
         if (_.isEmpty(req.body.lastName)) req.flash('error_msg', 'Please enter the last name.');
