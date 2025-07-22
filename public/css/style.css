@@ -1,91 +1,209 @@
-/* Space out content a bit */
+
+
+
+/* General Reset */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+  color: #333;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 15px;
-  padding-left: 15px;
+/* Login Page */
+.login-container {
+  max-width: 400px;
+  margin: 80px auto;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Custom page header */
-.header {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #e5e5e5;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
+.login-container img {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 80%;
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
 }
 
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #5b859e;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
+.login-container button:hover {
+  background-color: #466f88;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 10px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  height: auto;
+  background: rgba(255, 245, 255, 0.9);
+  padding: 20px 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.headerLetterForm {
-    margin-bottom: 0px !important;
+.sidebar img {
+  max-width: 90%;
+  display: block;
+  margin: 0 auto 15px;
 }
 
-.page-header {
-    margin-top: 0;
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-footer{
-    margin-top: 40px;
+.sidebar ul li {
+  padding: 12px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #ffe1ff;
+  border-radius: 6px;
+}
+
+.sidebar ul li a i {
+  margin-right: 8px;
+  color: #9b59b6;
+}
+
+/* Main content layout */
+.container {
+  margin-left: 250px;
+  padding: 30px;
+}
+
+/* System Settings */
+.section-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.settings-grid {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.settings-box {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.settings-box h4 {
+  margin-bottom: 15px;
+}
+
+.settings-box label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.settings-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.settings-box button {
+  padding: 10px 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background-color: #28a745;
+  transition: 0.3s;
+}
+
+.settings-box button:hover {
+  background-color: #218838;
+}
+
+/* Delete Sections */
+.delete-section {
+  margin-top: 40px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.delete-section h5 {
+  margin-bottom: 10px;
+}
+
+.delete-section input {
+  padding: 10px;
+  width: 300px;
+  max-width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.delete-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+.delete-section th,
+.delete-section td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.delete-section button {
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.delete-section button:hover {
+  background-color: #bd2130;
 }
