@@ -70,7 +70,7 @@ router.get('/app/updateroom/:hospitalNumber/:futureRoom', (req, res) => {
                     }
                 }
 
-                // 3. assign him to the current room
+               
                 patient.room = futureRoomObject.name;
                 patient.save();
 
