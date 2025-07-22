@@ -1,5 +1,4 @@
-// GET /app                  -> go the dashboard
-// GET /app/addpatient       -> go to addPatient page
+
 
 const express = require('express');
 const router = express.Router();
