@@ -35,7 +35,7 @@ router.post('/login',
 );
 
 
-// the Middleware for authetification -> provided by the passport library
+
 passport.use(new LocalStrategy(
   function(username, password, done) {
       User.getUserByUsername(username, function(err, user) {
