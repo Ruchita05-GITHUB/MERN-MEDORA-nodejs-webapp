@@ -16,7 +16,7 @@ router.post('/app/adduser', (req, res) => {
 	var username = req.body.username;
 	var password = req.body.password;
 
-    // validation
+    
 	req.checkBody('username', 'Username is required').notEmpty();
 	req.checkBody('password', 'Password is required').notEmpty();
 
