@@ -61,9 +61,7 @@ router.post('/app/adddisease', (req, res) => {
     }
 });
 
-/*
-    POST /app/deletedisease -> delete a disease from the system
-*/
+
 router.post('/app/deletediseases', (req, res) => {
     var diseasesToDelete = req.body.DD;
 
