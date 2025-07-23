@@ -24,7 +24,7 @@
 
 ---
 
-## 📁 Folder Structure (Basic)
+##  Folder Structure (Basic)
 
 /public
 ├── css/
@@ -39,7 +39,7 @@
 
 ---
 
-## 🧑‍💻 How to Run Locally
+## How to Run Locally
 
 bash
 
@@ -50,7 +50,7 @@ node app.js
 Then visit: http://localhost:3000
 
 ---
-## 🙏 Acknowledgements
+##  Acknowledgements
 
 
 Original design adapted from the NHS project
