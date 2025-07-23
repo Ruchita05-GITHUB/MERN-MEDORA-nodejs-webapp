@@ -42,7 +42,7 @@
 ## 🧑‍💻 How to Run Locally
 
 bash
-git clone https://github.com/your-username/medora-project.git
+
 cd medora-project
 npm install
 node app.js
@@ -50,7 +50,9 @@ node app.js
 Then visit: http://localhost:3000
 
 ---
-Acknowledgements
+## 🙏 Acknowledgements
+
+
 Original design adapted from the NHS project
 
 Developed and customized with by Medisetti Ruchita Sri
